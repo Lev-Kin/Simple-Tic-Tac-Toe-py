@@ -1,3 +1,6 @@
-print("""X O X
-O X O
-X X O """)
+cell = list(input())
+print('---------')
+print('|', cell[0], cell[1], cell[2], '|')
+print('|', cell[3], cell[4], cell[5], '|')
+print('|', cell[6], cell[7], cell[8], '|')
+print('---------')
