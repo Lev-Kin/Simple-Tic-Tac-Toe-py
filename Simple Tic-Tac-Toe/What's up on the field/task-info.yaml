@@ -232,9 +232,9 @@ files:
     if __name__ == '__main__':
         TicTacToeTest().run_tests()
   learner_created: false
-feedback_link: https://hyperskill.org/projects/73/stages/401/implement#comment
+feedback_link: https://hyperskill.org/learn/step/6505#comment
 status: Solved
 feedback:
   message: Congratulations!
   time: Wed, 12 Oct 2022 12:59:20 UTC
-record: -1
+record: 3

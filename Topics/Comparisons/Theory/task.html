@@ -14,7 +14,7 @@
 <li><code class="language-python">in</code> membership</li>
 <li><code class="language-python">not in</code> negated membership.</li>
 </ul>
-<p>The result of applying these operators is always <code class="language-python">bool</code>. The following sections focus on the first six operators (<code class="language-python">&lt;</code>, <code class="language-python">&lt;=</code>, <code class="language-python">&gt;</code>, <code class="language-python">&gt;=</code>, <code class="language-python">==</code>, <code class="language-python">!=</code>), but you can find more details about identity and membership testing in the next topics. Also, pay attention to the greater/less than or equal operators, they are supposed to be written in the same order their names are pronounced: <code class="language-python">&lt;=</code> less than or equal, <code class="language-python">&gt;=</code> greater than or equal.</p>
+<p>The result of applying these operators is always <code class="language-python">bool</code>. The following sections focus on the first six operators (<code class="language-python">&lt;</code>, <code class="language-python">&lt;=</code>, <code class="language-python">&gt;</code>, <code class="language-python">&gt;=</code>, <code class="language-python">==</code>, <code class="language-python">!=</code>), but you can find<a href="https://docs.python.org/3/reference/expressions.html#comparisons" rel="noopener noreferrer nofollow" target="_blank"> more details</a> about identity and membership testing in the next topics. Also, pay attention to the greater/less than or equal operators, they are supposed to be written in the same order their names are pronounced: <code class="language-python">&lt;=</code> less than or equal, <code class="language-python">&gt;=</code> greater than or equal.</p>
 <h5 id="comparing-integers" style="text-align: center;">Comparing integers</h5>
 <p>In this topic, we will cover only integer comparison.</p>
 <pre><code class="language-python">a = 5
@@ -37,7 +37,9 @@ z = 12
 result = x &lt; y and y &lt;= z  # True</code></pre>
 <p>In Python, there is a fancier way to write complex comparisons. It is called <strong>chaining</strong>. For example, <code class="language-python">x &lt; y &lt;= z</code> is almost equivalent to the expression you saw in the last example. The difference is that <code class="language-python">y</code> is evaluated only once. </p>
 <pre><code class="language-python">result = 10 &lt; (100 * 100) &lt;= 10000  # True, the multiplication is evaluated once</code></pre>
-<p></p><div class="alert alert-primary"> Please pay attention to the fact that tools for code quality often recommend <em>chaining</em> comparisons instead of <em>joining</em> them. </div><p></p>
+<p> </p>
+<p></p><div class="alert alert-primary"> Please pay attention to the fact that tools for code quality often recommend <em>chaining</em> comparisons instead of <em>joining</em> them. </div>
+<p> </p>
 <p>Comparison chaining, however, should be used carefully because sometimes expressions might get tricky, so the result would depend on the operators' order and how the parentheses are put. Consider this example:</p>
 <pre><code class="language-python">a = 1
 b = 2
