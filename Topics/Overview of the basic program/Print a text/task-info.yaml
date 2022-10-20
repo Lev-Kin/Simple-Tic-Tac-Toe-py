@@ -2,7 +2,7 @@ type: choice
 is_multiple_choice: true
 options:
 - text: a
-- text: b
+- text: empty_cell
 - text: c
 - text: d
 files:
